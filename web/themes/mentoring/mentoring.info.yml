@@ -1,0 +1,24 @@
+name: Mentoring theme
+type: theme
+base theme: classy
+description: A theme built while taking the hands-on theming course
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
+libraries:
+  - mentoring/global
+  - mentoring/bootstrap
+
+regions:
+  header: 'Header'
+  # primary_menu: 'Primary menu'
+  # secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: 'Highlighted'
+  featured_top: 'Featured top'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'

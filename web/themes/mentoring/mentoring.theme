@@ -1,0 +1,5 @@
+<?php
+
+function mentoring_preprocess_node(&$variables){
+    $variables['today'] = date('H:i, Y-m-d-');
+}
