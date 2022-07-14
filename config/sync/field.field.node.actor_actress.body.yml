@@ -1,0 +1,23 @@
+uuid: 1f41d566-ad8e-4005-b54b-94218db2dc1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.actor_actress
+  module:
+    - text
+id: node.actor_actress.body
+field_name: body
+entity_type: node
+bundle: actor_actress
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

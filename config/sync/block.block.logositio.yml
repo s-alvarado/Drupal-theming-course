@@ -1,0 +1,25 @@
+uuid: 7ba773aa-4551-476d-8e6c-9149008678c2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a21de20b-7ea1-4fae-86e3-0bb531c80ad5'
+  module:
+    - block_content
+  theme:
+    - mentoring
+id: logositio
+theme: mentoring
+region: footer_first
+weight: -7
+provider: null
+plugin: 'block_content:a21de20b-7ea1-4fae-86e3-0bb531c80ad5'
+settings:
+  id: 'block_content:a21de20b-7ea1-4fae-86e3-0bb531c80ad5'
+  label: 'Logo sitio'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

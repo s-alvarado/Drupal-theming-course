@@ -1,0 +1,19 @@
+uuid: cbc6d2a8-d0d0-496c-94da-21247fc9d23e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+name: Series
+type: series
+description: 'Use this to create new series content for your streaming app'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

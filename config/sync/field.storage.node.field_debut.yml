@@ -1,0 +1,20 @@
+uuid: 967a1b9c-1969-46ed-947b-7cd247db36d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_debut
+field_name: field_debut
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

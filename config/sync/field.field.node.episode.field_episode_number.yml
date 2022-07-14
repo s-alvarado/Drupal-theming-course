@@ -1,0 +1,23 @@
+uuid: d5a3c41b-f794-4e38-9f5b-39b0b11a7074
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_episode_number
+    - node.type.episode
+id: node.episode.field_episode_number
+field_name: field_episode_number
+entity_type: node
+bundle: episode
+label: 'Episode Number'
+description: 'The current seasson episode number.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

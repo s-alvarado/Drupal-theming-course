@@ -1,0 +1,23 @@
+uuid: a5e81cb0-f6fe-458e-a402-be9f78f73c62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seasons
+    - node.type.series
+id: node.series.field_seasons
+field_name: field_seasons
+entity_type: node
+bundle: series
+label: Seasons
+description: 'The number of seasons available to stream'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

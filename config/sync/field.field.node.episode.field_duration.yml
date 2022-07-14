@@ -1,0 +1,23 @@
+uuid: 4a7bac1d-6a62-44fa-bd4a-da9607b725a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_duration
+    - node.type.episode
+id: node.episode.field_duration
+field_name: field_duration
+entity_type: node
+bundle: episode
+label: Duration
+description: 'The duration of this episode'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

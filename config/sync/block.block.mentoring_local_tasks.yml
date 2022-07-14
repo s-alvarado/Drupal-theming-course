@@ -1,0 +1,22 @@
+uuid: b08087e1-c945-4245-bd4a-0a3231d3f188
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mentoring
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: mentoring_local_tasks
+theme: mentoring
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 187934bb-0047-42d6-b4c9-35c7930ec066
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mentoring
+_core:
+  default_config_hash: y0bXRvKYQQKkf_RVxA3aOPGpIfKKsDOzzrWYCgjxJ9Y
+id: mentoring_breadcrumbs
+theme: mentoring
+region: breadcrumb
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

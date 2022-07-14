@@ -1,0 +1,50 @@
+uuid: 591d6256-5b3e-4ba0-8bdb-20af76c94898
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.series.body
+    - field.field.node.series.field_cast
+    - field.field.node.series.field_debut
+    - field.field.node.series.field_genere
+    - field.field.node.series.field_poster
+    - field.field.node.series.field_seasons
+    - image.style.movia
+    - node.type.series
+  module:
+    - image
+    - user
+id: node.series.teaser
+targetEntityType: node
+bundle: series
+mode: teaser
+content:
+  field_debut:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_poster:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: movia
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  body: true
+  field_cast: true
+  field_genere: true
+  field_seasons: true

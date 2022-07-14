@@ -1,0 +1,20 @@
+uuid: 110a019c-c316-4aaf-a0b0-2789c7a0696b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_seasons
+field_name: field_seasons
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

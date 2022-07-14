@@ -1,0 +1,19 @@
+uuid: 3083cd8e-a29b-4136-a27b-18921806cdc3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+name: Actor-actress
+type: actor_actress
+description: 'A known hollywood performer.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

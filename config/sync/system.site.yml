@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 9b99670d-fe93-492c-8d41-88670a0d3511
+name: 'Popcorn time'
+mail: admin@example.com
+slogan: 'Best shows on demand'
+page:
+  403: ''
+  404: ''
+  front: /node/70
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

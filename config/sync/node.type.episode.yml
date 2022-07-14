@@ -1,0 +1,19 @@
+uuid: 36309840-85b9-4cdc-9e4c-06dc0d055c63
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+name: Episode
+type: episode
+description: 'The base template for a series episode.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

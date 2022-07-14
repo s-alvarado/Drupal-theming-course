@@ -1,0 +1,22 @@
+uuid: cce13939-9656-48ca-ac57-ab937265b152
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movie
+id: node.movie.status
+field_name: status
+entity_type: node
+bundle: movie
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: dc036331-caee-4cd2-a6ff-ef3f3106e6fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mentoring
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: mentoring_messages
+theme: mentoring
+region: footer_second
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

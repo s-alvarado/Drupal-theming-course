@@ -208,7 +208,19 @@ span.badge{
 
 article.card ~ span{
   font-size: 20px;
-  color: #A4161A;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  background-color: #A4161A;
+  width: 160px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 7px;
+  margin-top: 7px;
+}
+
+.pt-actor-teaser{
+  
 }
 
 /* OTHER */

@@ -1,0 +1,67 @@
+uuid: a60af629-1a63-492b-9f75-3d7fa9d56a64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.episode.body
+    - field.field.node.episode.field_duration
+    - field.field.node.episode.field_episode_number
+    - field.field.node.episode.field_seasons
+    - field.field.node.episode.field_serie
+    - node.type.episode
+  module:
+    - text
+    - user
+id: node.episode.default
+targetEntityType: node
+bundle: episode
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_duration:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_episode_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_seasons:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_serie:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

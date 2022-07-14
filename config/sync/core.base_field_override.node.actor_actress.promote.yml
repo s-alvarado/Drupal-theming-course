@@ -1,0 +1,22 @@
+uuid: 776da0b1-372b-4d12-90a1-628ae6f5d88d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.actor_actress
+id: node.actor_actress.promote
+field_name: promote
+entity_type: node
+bundle: actor_actress
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

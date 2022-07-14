@@ -1,0 +1,22 @@
+uuid: a65fd7ff-210f-4368-871e-25f710636565
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mentoring
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: mentoring_content
+theme: mentoring
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

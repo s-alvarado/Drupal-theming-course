@@ -1,0 +1,29 @@
+uuid: 322f275b-04a5-4937-b830-863bb0490c62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_serie
+    - node.type.episode
+    - node.type.series
+id: node.episode.field_serie
+field_name: field_serie
+entity_type: node
+bundle: episode
+label: Serie
+description: 'The show this episode belongs to'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      series: series
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,15 @@
+uuid: f9c28a30-3154-4890-abe5-0d3ac93d90e4
+langcode: en
+status: true
+dependencies: {  }
+name: movia
+label: 'Movie display'
+effects:
+  d1632392-c6eb-4803-8c36-15c5def5e2c3:
+    uuid: d1632392-c6eb-4803-8c36-15c5def5e2c3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 160
+      height: 240
+      anchor: center-center

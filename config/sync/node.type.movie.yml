@@ -1,0 +1,19 @@
+uuid: 4a4cf2dc-41ee-4821-8f32-22b9431cd544
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+name: Movie
+type: movie
+description: 'Use this to add new movies to your streaming app.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

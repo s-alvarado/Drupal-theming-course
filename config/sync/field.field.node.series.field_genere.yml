@@ -1,0 +1,29 @@
+uuid: ac685f01-2238-4a96-9a72-7815daa8f3ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_genere
+    - node.type.series
+    - taxonomy.vocabulary.generes
+id: node.series.field_genere
+field_name: field_genere
+entity_type: node
+bundle: series
+label: Genere
+description: "The generes contained in the show.\r\n"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      generes: generes
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,27 @@
+uuid: f198277f-1bb2-4c3c-acc7-e5f0d66bd44a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.series
+  module:
+    - text
+id: node.series.body
+field_name: body
+entity_type: node
+bundle: series
+label: Synapsis
+description: 'A brief description of the shows trama.'
+required: true
+translatable: true
+default_value:
+  -
+    value: "<p>Suspendisse ac maximus tortor. Suspendisse blandit arcu ac erat maximus consequat. Curabitur volutpat vehicula augue euismod ultricies. Duis lorem tellus, hendrerit eu pellentesque ut, efficitur sed libero. Etiam vel pellentesque velit, ac pharetra magna. Phasellus scelerisque vestibulum felis in pretium. Nunc scelerisque erat a vulputate semper.</p>\r\n"
+    summary: ''
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

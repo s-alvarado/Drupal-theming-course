@@ -1,0 +1,8 @@
+uuid: c2402c40-135d-45b9-b6fe-54e35814cee8
+langcode: en
+status: true
+dependencies: {  }
+name: Generes
+vid: generes
+description: 'Cinematic generes.'
+weight: 0

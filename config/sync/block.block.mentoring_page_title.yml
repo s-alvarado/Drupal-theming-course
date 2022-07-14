@@ -1,0 +1,20 @@
+uuid: f0329aeb-51d5-410f-bfbe-866696e01e61
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mentoring
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: mentoring_page_title
+theme: mentoring
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

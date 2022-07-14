@@ -1,0 +1,23 @@
+uuid: 0ab6e77c-06fc-4063-9416-364b6b01ccc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.episode
+  module:
+    - text
+id: node.episode.body
+field_name: body
+entity_type: node
+bundle: episode
+label: Resume
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

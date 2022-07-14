@@ -1,0 +1,23 @@
+uuid: f1087074-dd5c-4b55-9845-ec1b7fe11b14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_debut
+    - node.type.movie
+id: node.movie.field_debut
+field_name: field_debut
+entity_type: node
+bundle: movie
+label: Debut
+description: 'Thje year this movie made its debut.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,23 @@
+uuid: 3f7a7456-6266-4497-a7e0-90af304fcf38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_debut
+    - node.type.series
+id: node.series.field_debut
+field_name: field_debut
+entity_type: node
+bundle: series
+label: Debut
+description: 'The year the show first aired.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

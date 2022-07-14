@@ -1,0 +1,22 @@
+uuid: dbb5c40d-9321-46da-9a70-b12dfb6e372f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: episodes
+label: Episodes
+type: 'canonical_entities:node'
+pattern: '[node:field_serie]/S[node:field_seasons]E[node:field_episode_number]/[node:title]'
+selection_criteria:
+  fd8f069c-592c-4175-b74d-91cddd7998ad:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: fd8f069c-592c-4175-b74d-91cddd7998ad
+    context_mapping:
+      node: node
+    bundles:
+      episode: episode
+selection_logic: and
+weight: -5
+relationships: {  }

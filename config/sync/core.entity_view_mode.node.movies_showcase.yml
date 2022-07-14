@@ -1,0 +1,10 @@
+uuid: fff9c498-9671-4fd1-bb87-34062b4e1681
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.movies_showcase
+label: 'Movies showcase'
+targetEntityType: node
+cache: true

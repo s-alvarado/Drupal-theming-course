@@ -1,0 +1,29 @@
+uuid: 9c8cc283-7d4a-4766-8f1c-743becef04e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cast
+    - node.type.actor_actress
+    - node.type.movie
+id: node.movie.field_cast
+field_name: field_cast
+entity_type: node
+bundle: movie
+label: Cast
+description: 'The cast starring on the movie'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      actor_actress: actor_actress
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

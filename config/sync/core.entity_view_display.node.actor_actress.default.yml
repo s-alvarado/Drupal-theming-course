@@ -1,0 +1,39 @@
+uuid: 1aad2aac-94b2-410f-a3e2-142116f07044
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.actor_actress.body
+    - field.field.node.actor_actress.field_profile_image
+    - node.type.actor_actress
+  module:
+    - image
+    - text
+    - user
+id: node.actor_actress.default
+targetEntityType: node
+bundle: actor_actress
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_profile_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
