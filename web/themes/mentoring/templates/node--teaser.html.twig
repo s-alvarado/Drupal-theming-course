@@ -67,7 +67,6 @@
  *
  */
 #}
-{# {{ dump(_context.node|keys)}} #}
 {%
   set classes = [
     'node',
@@ -82,26 +81,33 @@
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }} class="pt-node-title">
-      <a href="{{ url }}" rel="bookmark" >{{ label }}</a>
+  {# {% if label and not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
     </h2>
-  {% endif %}
+  {% endif %} #}
   {{ title_suffix }}
 
-  <div{{ content_attributes.addClass('node__content') }}>
-    <div class="row">
-      <div class='col-md-3 pt-node-info'>{{ content.field_poster}}</div>
-      <div class='col-md-9 d-flex flex-column'>
-        <h3 class="pt-node-title">{{ label }}</h3>
-        <div class="pt-node-info">
-        {{ content.body }}
-        </div>
-        {{ content.field_debut }}
-        {{ content.field_seasons }}
-        {{ content.field_genere }}
-        {{ content.field_cast }}
+  {% if display_submitted %}
+    <footer class="node__meta">
+      {{ author_picture }}
+      <div{{ author_attributes.addClass('node__submitted') }}>
+        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+        {{ metadata }}
       </div>
+    </footer>
+  {% endif %}
+
+  <div{{ content_attributes.addClass('node__content') }}>
+  {# <a href={{ url }}> #}
+    <div class="d-flex flex-column align-items-center">
+      <article class="card pt-content-card">
+        {{ content.field_poster }}
+        <span class="badge">{{ content.field_debut }}</span>
+      </article>
+        {{ label }}
     </div>
+  {# </a> #}
+  </div>
 
 </article>

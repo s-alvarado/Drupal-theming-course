@@ -111,14 +111,15 @@ ul.tabs >li > a {
   margin: 0px 0px 10px 0px;
   padding: 5px;
   background-color: #D3D3D3;
-  
+  width: 80%;
 }
 .pt-aside-view-title{
   text-decoration: none;
   color: #161A1D;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
-  text-decoration: underline 1px #A4161A ;
+  text-decoration: underline 1px #A4161A;
+  text-align: center;
 }
 
 /* FOOTER REGION */
@@ -174,7 +175,47 @@ div.field__item > a{
 div.field__item > a:hover{
   color: #A4161A;
 }
+
+/* SERIES EPISODES LIST */
+td.views-field > a{
+  text-decoration: none;
+  color: #D3D3D3;
+}
+
+td.views-field > a:hover{
+  color: #A4161A;
+}
+
+div.views-element-container > h2{
+  color: #A4161A;
+}
+
+span.badge{
+  width: 45px;
+  position:absolute;
+  bottom: 5px;
+  right:5px;
+  background-color: #A4161A;
+}
+
+/* Views */
+.pt-content-card{
+  width: 160px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+article.card ~ span{
+  font-size: 20px;
+  color: #A4161A;
+}
+
 /* OTHER */
+nav.pager > ul > li > a{
+  text-decoration: none;
+  color: #A4161A;
+}
 #block-mentoring-account-menu{
   justify-self: flex-end;
 }
