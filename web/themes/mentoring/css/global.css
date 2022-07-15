@@ -220,7 +220,10 @@ article.card ~ span{
 }
 
 .pt-actor-teaser{
-  
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-end;
 }
 
 /* OTHER */

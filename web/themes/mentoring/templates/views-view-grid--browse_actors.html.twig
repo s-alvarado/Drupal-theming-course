@@ -35,6 +35,7 @@
 {% if options.row_class_default %}
   {%
     set row_classes = [
+      'row',
       'views-row',
       options.alignment == 'horizontal' ? 'clearfix',
     ]
@@ -43,6 +44,7 @@
 {% if options.col_class_default %}
   {%
     set col_classes = [
+      'col-md-4',
       'pt-actor-teaser',
       'views-col',
       options.alignment == 'vertical' ? 'clearfix',
