@@ -85,13 +85,11 @@
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark" class="pt-aside-view-title">{{ label }}</a>
+      <a href="{{ url }}" rel="bookmark" class="pt-aside-view-title">{{ title_debut }}</a>
     </h2>
   {% endif %}
   {{ title_suffix }}
   {% if content.field_poster %}
-  <div class="rounded">
     {{content.field_poster}}
-  </div>
   {% endif %}
 </article>

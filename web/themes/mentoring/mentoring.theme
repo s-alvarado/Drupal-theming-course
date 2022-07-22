@@ -1,5 +1,40 @@
 <?php
 
 function mentoring_preprocess_node(&$variables){
+    // Creates a variable that contains the current date.
     $variables['today'] = date('H:i, Y-m-d-');
+
+    // Converts the duration property of the node into hours and minutes
+    $node = $variables['node'];
+    // Check if the node has the field.
+    if ($node->hasField('field_duration')) {
+        // Get the value of the field.
+        $duration = $node->field_duration->value;
+        // Process hours and minutes
+        $hours = floor($duration / 60);
+        $minutes = $duration % 60;
+        //Assign new variable value
+        $variables['content_length'] = "{$hours}h {$minutes}m";
+    }
+
+    if($node->hasField('field_debut')){
+      // Get necessary values
+      $debut_data = $node->field_debut->value;
+      $title_data = $node->title->value;
+      // Set new variable
+      $variables['title_debut'] = "{$title_data} ({$debut_data})";
+    }
+}
+
+
+function mentoring_page_attachments_alter(array &$page) {
+  // We're going to pass along the user's display name to our front-end code.
+  $account = \Drupal::currentUser();
+  if ($account->isAuthenticated()) {
+    // First we attach our asset library to the page.
+    $page['#attached']['library'][] = 'mentoring/friendly-greeting';
+    // Then we pass along our dynamic value.
+    // This will then be available in our JavaScript as drupalSettings.friendly.name.
+    $page['#attached']['drupalSettings']['mentoring']['name'] = $account->getDisplayName();
+  }
 }

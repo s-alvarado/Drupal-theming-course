@@ -4,10 +4,20 @@ bootstrap:
     theme:
       css/bootstrap.min.css: {}
   js:
-    js/bootstrap.min.js: {}
+    js/bootstrap.js: {}
 
 global:
   version: 1.0
   css:
     theme:
       css/global.css: {}
+  js:
+    js/santiago.js: {}
+
+friendly-greeting:
+  version: 1.0
+  license: GPL
+  js:
+    js/friendly-greeting.js: { }
+  dependencies:
+    - core/drupalSettings

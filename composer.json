@@ -17,11 +17,14 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/bootstrap": "^3.24",
+        "drupal/bootstrap_simple_carousel": "^1.63",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
         "drupal/devel": "^4.1",
+        "drupal/inline_entity_form": "^1.0@RC",
         "drupal/pathauto": "^1.10",
+        "drupal/views_bootstrap": "^3.9",
         "drush/drush": "^10.2"
     },
     "conflict": {
@@ -90,5 +93,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "kint-php/kint": "^4.1"
     }
 }

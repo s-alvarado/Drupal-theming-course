@@ -77,6 +77,7 @@ form#search-block-form > div > input[type=submit]{
   border-radius: 10px;
   border: 2px solid gray;
 }
+
 /* ACTIONS MENU */
 ul.tabs {
   margin: 0 0 1em;
@@ -97,29 +98,46 @@ ul.tabs >li > a {
 }
 
 /* SIDE BAR */
+.layout-sidebar-first {
+  background-color: #A4161A;
+  border: 2px white dashed;
+  margin-bottom: auto;
+  border-radius: 10px;
+}
+
 #block-views-block-movies-block-1 > h2{
-  color: #A4161A;
+  color: white;
   text-align: center;
 }
 
-.pt-aside-structure{
+.views-row {
+  text-align: -webkit-center;
+}
+
+.pt-aside-structure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px dashed #A4161A ;
+  border: 2px solid black;
   border-radius: 5px;
   margin: 0px 0px 10px 0px;
   padding: 5px;
   background-color: #D3D3D3;
-  width: 80%;
+  width: 90%;
 }
+
 .pt-aside-view-title{
   text-decoration: none;
   color: #161A1D;
   font-size: 20px;
   font-weight: bold;
-  text-decoration: underline 1px #A4161A;
+  text-decoration: underline 2px #660708;
   text-align: center;
+}
+
+.pt-aside-view-title:hover{
+  color: #BA181B;
+  text-decoration: underline 2px black;
 }
 
 /* FOOTER REGION */
@@ -153,6 +171,14 @@ h1.page-title{
 .pt-node-info{
   color: #F5F3F4;
 }
+
+.pt-node-image {
+  background-color: #F5F3F4;
+  align-self: center;
+  padding: 12px;
+  border: 2px #A4161A dashed;
+}
+
 div.field__label{
   color: #A4161A;
   font-size: 18px;
@@ -210,10 +236,10 @@ article.card ~ span{
   font-size: 20px;
   color: white;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #A4161A;
   width: 160px;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 8px;
   padding: 7px;
   margin-top: 7px;
@@ -221,9 +247,21 @@ article.card ~ span{
 
 .pt-actor-teaser{
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  flex-direction: row-reverse;
+  align-items: center;
   justify-content: flex-end;
+  padding: 5px 1px;
+}
+
+div.pt-actor-teaser > a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  background-color: #A4161A;
+  border: 2px solid #D3D3D3;
+  border-radius: 8px;
+  padding: 5px;
+  margin-left: 12px;
 }
 
 /* OTHER */
@@ -236,4 +274,14 @@ nav.pager > ul > li > a{
 }
 #block-mentoring-account-menu{
   justify-self: flex-end;
+}
+
+.carousel-item{
+  text-align: -webkit-center;
+}
+
+.carousel {
+  position: relative;
+  border: 2px #A4161A solid;
+  margin: 18px 0px;
 }
