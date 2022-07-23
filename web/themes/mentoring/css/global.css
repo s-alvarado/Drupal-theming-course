@@ -285,3 +285,10 @@ nav.pager > ul > li > a{
   border: 2px #A4161A solid;
   margin: 18px 0px;
 }
+
+@media( max-width: 950px ) {
+  .layout-sidebar-first {
+    /* display: none; */
+  }
+
+}

@@ -1,0 +1,28 @@
+mentoring.sm:
+  label: small
+  mediaQuery: 'all and (max-width: 576px)'
+  weight: 0
+  multipliers:
+    - 1x
+  group: Bootstrap breakpoints
+mentoring.md:
+  label: medium
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 992px)'
+  weight: 1
+  multipliers:
+    - 1x
+  group: Bootstrap breakpoints
+mentoring.lg:
+  label: large
+  mediaQuery: 'all and (min-width: 992px) and (max-width: 1200px)'
+  weight: 2
+  multipliers:
+    - 1x
+  group: Bootstrap breakpoints
+mentoring.xl:
+  label: extralarge
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 3
+  multipliers:
+    - 1x
+  group: Bootstrap breakpoints
