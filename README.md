@@ -1,5 +1,35 @@
 # Docksal powered Drupal 9 With Composer Installation
 
+## Developer notice:
+
+This is a sample site running on Drupal9 that I used as a backbone to implement the knowledge I aquired while learning how to work with different parts of Drupal. I really didnt pay much attention to repo handling and commits/branches since the original puprose of the repo was to simply keep my work synced between my pcs as needed.
+
+The content you may want to take a look at could be divided in two: Theme Development and Module development.
+
+### Theme development
+
+I built a little custom theme while learning theming and site building. The idea was to create something reesembling a streaming service page.
+
+This can be found in: web\themes\mentoring.
+
+Things I learned during this experienmce:
+- How to install/create a theme and configure it.
+- How the render API and themes work, defining regions, using base themes and asset libraries, overriding and creation of templates.
+- How twig templating works, using preprocess functions and hooks to add/modify the availabe information or behaviour of a theme.
+- Working with views, extending functionality with modules such as responsive images and configuring them.
+
+### Module Development
+I built some custom modules to better understand how drupals backend works, I worked more specifically with: Form API, Database API, Schema API, Plugin api. This is still a work in progress and some of it is missing due to technical problems with one of my pcs.
+
+This can be found in web\modules\custom.
+
+Things I learned so far:
+- How to create and configure a custom module.
+- How to create, alter and validate forms using the Form API.
+- How to plugins and services work, how to create and configure an annotation based plugin and use dependency injection.
+- How to the database and schema apis work, how to instantiate a connection, write querys and create a custom schema for a table
+
+
 This is a sample Drupal 9 with Composer installation pre-configured for use with Docksal.
 
 Features:
