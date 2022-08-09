@@ -1,0 +1,5 @@
+name: weKnow Agenda Module
+description: A module developed to understand the database and schema apis.
+package: weKnow Drupal Training
+type: module
+core_version_requirement: ^8 || ^9

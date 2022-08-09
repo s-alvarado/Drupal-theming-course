@@ -1,0 +1,24 @@
+wk_agenda.event_form:
+  path: '/wk_agenda/event_form'
+  defaults:
+    _form: '\Drupal\wk_agenda\Form\WkAgendaEventForm'
+    _title: 'New event form'
+  requirements:
+    _permission: 'access content'
+
+wk_hello.current_events:
+  path: '/wk_agenda/my_events'
+  defaults:
+    _controller: '\Drupal\wk_agenda\Controller\WkAgendaEventController::getEvents'
+    _title: 'weKnow Agenda'
+  requirements:
+    _permission: 'access content'
+
+wk_agenda.delete_event:
+  path: '/wk_agenda/delete/{eid}'
+  defaults:
+    _form: '\Drupal\wk_agenda\Form\WkAgendaDeleteEventForm'
+    _title: 'Confirm deletion'
+  requirements:
+    _permission: 'access content'
+    

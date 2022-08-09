@@ -1,0 +1,45 @@
+<?php
+
+function wk_agenda_schema() {
+  $schema['event'] = array(
+    'description' => 'The base table for agenda events.',
+    'fields' => array(
+      'eid' => array(
+        'description' => 'The primary identifier for an event.',
+        'type' => 'serial',
+        'size' => 'normal',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'event_title' => array(
+        'description' => 'The title assigned to the event.',
+        'type' => 'varchar',
+        'length' => 124,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'event_description' => array(
+        'description' => 'The description of the event.',
+        'type' => 'varchar',
+        'length' => 254,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'event_date' => array(
+        'description' => t('The date assigned to the event.'),
+        'type' => 'int',
+        'not null' => FALSE,
+        'default' => 0,
+      ),
+    ),
+    'indexes' => array(
+      'event_id' => array(
+        'eid',
+      ),
+    ),
+    'primary key' => array(
+      'eid',
+    ),
+  );
+  return $schema;
+}

@@ -22,6 +22,7 @@
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
         "drupal/devel": "^4.1",
+        "drupal/examples": "^3.0",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/pathauto": "^1.10",
         "drupal/views_bootstrap": "^3.9",
